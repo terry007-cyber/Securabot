@@ -1,7 +1,7 @@
 # SecuraBot - AI Assistant for Web Security Testing
 
 **Version:** 1.0.0
-**Author:** [Your Name/Team Name Here]
+**Author:** @teaser
 **Project Date:** October 2025
 
 ## 1. Project Vision
