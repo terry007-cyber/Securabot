@@ -2,7 +2,7 @@ import google.generativeai as genai
 
     # --- List Models Script ---
     # PASTE YOUR NEWEST "GOLDEN" API KEY DIRECTLY INTO THE QUOTES BELOW
-MY_API_KEY = "AIzaSyAW8muybe5JxvOcN9eY91D5YtiBS4IBpJQ"
+MY_API_KEY = "..................................."
 
 print("--- Listing Available Models for Your API Key ---")
 
