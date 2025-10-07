@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-    # --- List Models Script ---
+    # --- List Models Script to test the API connection with the APIkey---
     # PASTE YOUR NEWEST "GOLDEN" API KEY DIRECTLY INTO THE QUOTES BELOW
 MY_API_KEY = "..................................."
 
