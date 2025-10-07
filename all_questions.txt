@@ -1,323 +1,323 @@
-1. 1. What is the primary goal of a basic SQL injection test?
-2. 2. Provide a classic payload for bypassing a login form and explain why it works.
-3. 3. What is the main difference between Union-based SQLi and Blind SQLi?
-4. 4. What is the most important command to start with when using the sqlmap tool?
-5. 5. What is the single most effective way to prevent SQL injection?
-6. 6. What is the difference between Authentication (AuthN) and Authorization (AuthZ) in API security?
-7. 7. How do you manually test for an IDOR (Insecure Direct Object Reference) vulnerability in an API?
-8. 8. What is a common vulnerability to check for in a JSON Web Token (JWT)?
-9. 9. What does it mean if an API endpoint is missing rate limiting and why is it a risk?
-10. 10. What are Postman and Burp Suite used for in API testing?
-11. 11. What is Cross-Site Scripting (XSS) and how does it differ from SQL Injection?
-12. 12. What is the most effective way to prevent Cross-Site Scripting (XSS)?
-13. 13. What is an XML External Entity (XXE) attack?
-14. 14. How can you prevent XXE vulnerabilities?
-15. 15. Explain a Second-Order SQL Injection attack.
-16. 16. What is an Out-of-Band SQL Injection attack?
-17. 17. What are some important HTTP security headers to check for when testing an API?
-18. 18. Why is 'Improper Assets Management' a risk for APIs?
-19. 19. How can a GraphQL API be abused if not properly secured?
-20. 20. What is a Server-Side Request Forgery (SSRF) vulnerability in the context of an API?
-21. 21. Can you provide a list of common SQL injection payloads for testing?
-22. 22. Explain in detail how to use a time-based blind SQL injection payload.
-23. 23. What is a simple but effective payload to test for reflected Cross-Site Scripting (XSS)?
-24. 24. Provide an advanced XSS payload that can steal a user's session cookie.
-25. 25. What is an XML External Entity (XXE) payload used to read local files?
-26. 26. Give a payload for a basic Server-Side Request Forgery (SSRF) attack.
-27. 27. How can you bypass a Web Application Firewall (WAF) for SQL injection?
-28. 28. Provide an example of a database-specific SQLi payload that would not work on other databases.
-29. 29. What is Broken Function Level Authorization (BFLA) in an API, and how is it different from IDOR?
-30. 30. Explain a Mass Assignment vulnerability in an API with an example.
-31. 31. How can a CORS misconfiguration be a security risk for an API?
-32. 32. Hi or Hello or Hey
-33. 33. How are you? or How are you today?
-34. 34. What is your name? or Who are you?
-35. 35. Thank you or Thanks
-36. 36. What is the date today?
-37. 37. What is the OWASP Top 10?
-38. 38. Can you list and explain the OWASP Top 10 for 2021?
-39. 39. For comparison, what were the OWASP Top 10 for 2017?
-40. 40. What were the biggest changes between the 2017 and 2021 OWASP Top 10 lists?
-41. 41. What is SQL?
-42. 42. What is an API?
-43. 43. What is the difference between a database, a DBMS, and SQL?
-44. 44. What are the main sub-languages of SQL?
-45. 45. What is a SQL query?
-46. 46. What is a 'schema' in a database?
-47. 47. What is a primary key?
-48. 48. What is a foreign key?
-49. 49. What is the difference between WHERE and HAVING clauses?
-50. 50. What is normalization in a database?
-51. 51. What is the difference between DROP, TRUNCATE, and DELETE?
-52. 52. What is a stored procedure?
-53. 53. What is In-Band SQL Injection?
-54. 54. What is Out-of-Band SQL Injection (OOB-SQLi)?
-55. 55. What is a first-order SQL injection?
-56. 56. What is a second-order or stored SQL injection?
-57. 57. Why is 'information gathering' important before performing SQLi?
-58. 58. What are information_schema tables in MySQL?
-59. 59. What is the purpose of the `ORDER BY` clause in a UNION-based SQLi attack?
-60. 60. What is a stacked query SQL injection?
-61. 61. What is content-based blind SQL injection?
-62. 62. What is the role of character encoding in SQLi attacks?
-63. 63. What is a payload to list all table names in a MySQL database named 'webapp'?
-64. 64. How would you extract data from columns 'user' and 'pass' from a table 'accounts'?
-65. 65. What is a payload to read a file using `LOAD_FILE` in MySQL?
-66. 66. What is a payload to write a file to the web server in MySQL?
-67. 67. What is a payload to perform a DNS lookup in an OOB SQLi on Windows?
-68. 68. What is a payload to perform a DNS lookup in an OOB SQLi on Oracle?
-69. 69. What is a time-based payload to extract the first letter of the database name in PostgreSQL?
-70. 70. How do you perform a SQL injection in a `LIMIT` clause?
-71. 71. What is a "dangling link" SQL injection?
-72. 72. What is a SQL injection payload using the `GROUP_CONCAT` function in MySQL?
-73. 73. How to perform SQLi in an `INSERT` statement?
-74. 74. What is a payload for error-based injection in Oracle?
-75. 75. How can the `LIKE` clause be vulnerable to SQL injection?
-76. 76. What is a boolean-based payload to check if a user 'admin' exists?
-77. 77. What is a payload to get the current database user in PostgreSQL?
-78. 78. How do you bypass a filter that blocks the word 'UNION'?
-79. 79. What is a payload to find the database version in SQL Server without using `@@version`?
-80. 80. How can you use hexadecimal encoding in a SQLi payload?
-81. 81. What is a payload for a time-based blind injection in a `WHERE` clause?
-82. 82. What is a "cookie-based" SQL injection?
-83. 83. What is input validation?
-84. 84. What is the difference between allow-listing and deny-listing?
-85. 85. What is output encoding?
-86. 86. Why is using stored procedures not a complete defense against SQLi?
-87. 87. What is the principle of least privilege?
-88. 88. How does ORM help prevent SQL injection?
-89. 89. Why is escaping user input less effective than parameterized queries?
-90. 90. Can a database firewall help prevent SQLi?
-91. 91. How can type casting prevent SQL injection?
-92. 92. How do you securely handle dynamic table or column names?
-93. 93. What is NoSQL injection?
-94. 94. What is an example of a MongoDB injection payload?
-95. 95. What is LDAP injection?
-96. 96. What is XPath injection?
-97. 97. How can a search function be vulnerable to SQLi?
-98. 98. Can an ORDER BY clause be exploited for data exfiltration?
-99. 99. What is a "deep blind" SQL injection?
-100. 100. How can an API endpoint be vulnerable to SQL injection?
-101. 101. What is header-based SQL injection?
-102. 102. Can database link injection occur?
-103. 103. What is the primary function of the tool sqlmap?
-104. 104. What does the `--dbs` flag do in sqlmap?
-105. 105. How do you tell sqlmap to test a specific parameter?
-106. 106. What is the `--risk` level in sqlmap?
-107. 107. How can you use sqlmap to test a POST request?
-108. 108. What is the `--os-shell` flag in sqlmap?
-109. 109. Besides sqlmap, what are other tools used to find SQLi?
-110. 110. What is a "tamper script" in sqlmap?
-111. 111. How can you handle a login form with sqlmap?
-112. 112. What does the `--technique` flag do in sqlmap?
-113. 113. What is the business impact of a successful SQL injection attack?
-114. 114. What was the famous Equifax breach caused by?
-115. 115. Can SQL injection lead to a full server takeover?
-116. 116. How does SQL injection relate to compliance standards like PCI DSS?
-117. 117. What is the difference between SQLi and Cross-Site Scripting (XSS)?
-118. 118. Why are error messages a security risk?
-119. 119. Is it possible to perform SQLi if the application is not using a SQL database?
-120. 120. What is a "zero-day" SQL injection?
-121. 121. Why is it important to log SQL queries for security?
-122. 122. How can a code review process help prevent SQLi?
-123. 123. What is a differential injection?
-124. 124. Can SQLi occur through a DNS query?
-125. 125. What is a "SQL Truncation Attack"?
-126. 126. How can SQL injection be used to create a Denial of Service (DoS)?
-127. 127. What is a "data-only" attack in the context of SQLi?
-128. 128. What is the difference between `CHAR()` and `CONCAT()` in a WAF bypass?
-129. 129. How can SQL session variables be abused?
-130. 130. What is a "false positive" in an automated SQLi scan?
-131. 131. What is a "false negative" in an automated SQLi scan?
-132. 132. What is "SQL collation"?
-133. 133. Can SQLi occur in an `UPDATE` statement's `SET` clause?
-134. 134. What is a "polyglot" injection payload?
-135. 135. Can you get SQLi through an integer-based parameter?
-136. 136. What is "SQL sharding"?
-137. 137. How can the `PIVOT` operator in SQL Server be abused?
-138. 138. What is the significance of the `mysql_real_escape_string` function?
-139. 139. Can you inject into a `TRUNCATE` statement?
-140. 140. What is "taint analysis"?
-141. 141. How does HTTP Parameter Pollution (HPP) relate to SQLi?
-142. 142. What is the most important mindset for a security tester looking for SQLi?
-143. 143. What is a REST API?
-144. 144. What is a GraphQL API?
-145. 145. What is the difference between an API endpoint and a URL?
-146. 146. What are the most common HTTP methods used in REST APIs?
-147. 147. What is a JSON Web Token (JWT)?
-148. 148. What is the difference between HTTP and HTTPS?
-149. 149. What is an API key?
-150. 150. What is OAuth 2.0?
-151. 151. What does it mean for an API to be 'stateless'?
-152. 152. What is API versioning and why is it important?
-153. 153. What is the OWASP API Security Top 10?
-154. 154. What is API1:2023 - Broken Object Level Authorization (BOLA)?
-155. 155. What is API2:2023 - Broken Authentication?
-156. 156. What is API3:2023 - Broken Object Property Level Authorization?
-157. 157. What is API4:2023 - Unrestricted Resource Consumption?
-158. 158. What is API5:2023 - Broken Function Level Authorization (BFLA)?
-159. 159. What is API6:2023 - Unrestricted Access to Sensitive Business Flows?
-160. 160. What is API7:2023 - Server-Side Request Forgery (SSRF)?
-161. 161. What is API8:2023 - Security Misconfiguration?
-162. 162. What is API9:2023 - Improper Inventory Management?
-163. 163. What is API10:2023 - Unsafe Consumption of APIs?
-164. 164. How do you test a JWT for signature validation?
-165. 165. How do you test for weak password policies on a registration endpoint?
-166. 166. What is a test for insecure direct password reset?
-167. 167. How can you test for missing rate limiting on a login endpoint?
-168. 168. How do you test an API key for excessive permissions?
-169. 169. What is a "replay attack" against an API?
-170. 170. How do you test for session termination vulnerabilities?
-171. 171. How do you test an OAuth 2.0 implementation for the "Implicit Grant" flow vulnerability?
-172. 172. How to test for Broken Object Level Authorization (BOLA/IDOR)?
-173. 173. How do you test for Broken Function Level Authorization (BFLA)?
-174. 174. How do you test an API endpoint for command injection?
-175. 175. How do you test an API for SQL injection?
-176. 176. How can you test a GraphQL endpoint for batching attacks?
-177. 177. How do you test for Mass Assignment?
-178. 178. How can you test for Verbose Error Messages?
-179. 179. How do you test for XXE injection in an API that accepts XML?
-180. 180. How do you test for Insecure Deserialization?
-181. 181. How do you test an API that accepts file uploads for vulnerabilities?
-182. 182. What is parameter pollution and how do you test for it?
-183. 183. How do you test a GraphQL endpoint for excessive errors?
-184. 184. How do you test for race conditions in an API?
-185. 185. How would you test a "refer a friend" feature for abuse?
-186. 186. How do you test a coupon code feature for flaws?
-187. 187. What is a test for API response manipulation?
-188. 188. How do you test for an insecure API redirect?
-189. 189. How do you test for business logic flaws in a checkout process?
-190. 190. How to test for API key leakage?
-191. 191. How do you test for denial of service through regex?
-192. 192. How do you find undocumented API endpoints?
-193. 193. How do you test for information leakage in API responses?
-194. 194. What security headers are important to check for in API responses?
-195. 195. How do you test an API for old, unpatched versions?
-196. 196. How do you test for a CORS misconfiguration?
-197. 197. How do you check if an API is exposing unnecessary HTTP methods?
-198. 198. How do you test if an API is vulnerable to Host Header Injection?
-199. 199. What is the risk of an API not having a `Cache-Control` header?
-200. 200. How do you test for default credentials on an API's infrastructure?
-201. 201. How can you find sensitive data in public documentation?
-202. 202. What is a test for stack trace exposure?
-203. 203. How to test an API for unprotected metadata endpoints?
-204. 204. How do you perform introspection on a GraphQL API?
-205. 205. How do you test for deep recursion in a GraphQL query?
-206. 206. What is a test for GraphQL query cost analysis?
-207. 207. How do you test for batching attacks in GraphQL?
-208. 208. How are authorization and authentication different in GraphQL?
-209. 209. What is a GraphQL alias abuse attack?
-210. 210. How can you test for information leakage in GraphQL error messages?
-211. 211. How do you test for mutations that lack proper authorization?
-212. 212. What is the difference between a Query, a Mutation, and a Subscription in GraphQL?
-213. 213. How do you test a GraphQL API for CSRF vulnerabilities?
-214. 214. What is the first step in testing an API?
-215. 215. What is the role of Postman in API testing?
-216. 216. What is the role of Burp Suite in API testing?
-217. 217. What is Kiterunner?
-218. 218. What is a Swagger or OpenAPI file?
-219. 219. What is "shifting left" in API security?
-220. 220. What is the difference between DAST and SAST for API testing?
-221. 221. Why is it important to test both authenticated and unauthenticated endpoints?
-222. 222. What is the value of creating a testing methodology or checklist?
-223. 223. What is the most important skill for an API security tester?
-224. What is the difference between parameterized queries and prepared statements?
-225. How can second-order SQL injection be detected during code review?
-226. What are the typical places to look for injection bugs in an API (headers, body, query, cookies)?
-227. How can you safely validate and sanitize JSON input on the server side?
-228. What is the most effective way to test JWT signature validation?
-229. How should refresh tokens be implemented to minimize risk?
-230. What are the security implications of long-lived vs short-lived access tokens?
-231. How can you mitigate credential stuffing attacks against an API?
-232. What telemetry would indicate a brute-force attack is in progress?
-233. How do you detect blind SQLi when the application returns no error messages?
-234. What are safe patterns for logging user input without causing log injection or leakage?
-235. How do you design an allow-list for dynamic table or column names?
-236. What are best practices for handling file uploads to avoid RCE or path traversal?
-237. How can you test for command injection in backend processing pipelines?
-238. What are effective rate-limiting strategies for APIs (and their tradeoffs)?
-239. How do you design API pagination to avoid leaking data between users?
-240. What are the signs of an SSRF vulnerability when no external callbacks are allowed?
-241. How can you protect cloud metadata endpoints from server-side access?
-242. What is the danger of reflecting the Origin header in CORS responses?
-243. How can you detect mass-assignment vulnerabilities in an API quickly?
-244. What are secure defaults for CORS configuration on public APIs?
-245. How does content-security-policy (CSP) mitigate XSS in single-page apps?
-246. What are the risks of storing secrets in environment variables in containers?
-247. How can supply-chain vulnerabilities be introduced via CI/CD pipelines?
-248. What is the difference between DAST and SAST and when to use each?
-249. How would you test an API gateway for authorization bypasses?
-250. What are the pros and cons of using a WAF versus fixing the application itself?
-251. How can API versioning introduce security risk if not managed properly?
-252. What checks should be part of a secure API deployment checklist?
-253. How can you fingerprint the database engine without exploiting it?
-254. What are effective defenses against time-based blind SQLi extraction?
-255. How do you test GraphQL for overly expensive or nested queries?
-256. What are the security risks of enabling GraphQL introspection in production?
-257. How can you test for insecure deserialization in JSON or binary formats?
-258. How do you detect token replay attacks in a stateless API environment?
-259. What is the safe way to implement RBAC in a microservices architecture?
-260. How can you harden password reset flows to prevent account takeover?
-261. What is HTTP request smuggling and how can it affect API security?
-262. How can client-side validation be bypassed and why is server validation required?
-263. What are the best practices for secret rotation for service-to-service credentials?
-264. How do you safely expose third-party webhooks without opening SSRF?
-265. What logging and alert thresholds help detect data exfiltration attempts?
-266. How should error messages be structured to avoid leaking internal details?
-267. What is the role of canary tokens in detecting automated exploitation?
-268. How can you safely test rate limiting without causing collateral DoS?
-269. What are common pitfalls when implementing role escalation protection?
-270. How do you identify stale or forgotten API endpoints in a large system?
-271. What are the consequences of allowing user-supplied redirects (open redirect)?
-272. How can you test if a file upload is being executed as code on the server?
-273. What metrics should a security dashboard display for API health and threat detection?
-274. How to design effective allow-lists for accepted MIME types and file signatures?
-275. What are the security tradeoffs of using API keys vs OAuth2 for machine clients?
-276. How do you test for header-based injection vulnerabilities (User-Agent, Referer)?
-277. What is parameter pollution and how might it be abused in different backends?
-278. How do you test for insecure default permissions on newly created DB users?
-279. What is the impact of verbose SQL error messages in production, and how to mitigate it?
-280. How can database permissions enforce the principle of least privilege?
-281. What are safe approaches to logging SQL queries for debugging without exposing secrets?
-282. How do you validate and sanitize data used in server-side template engines?
-283. What are the key indicators of automated SQLi scanning in access logs?
-284. How can you detect chained vulnerabilities (e.g., SSRF → internal auth access)?
-285. What hardening steps should be applied to XML parsers to prevent XXE?
-286. How can you validate that a WAF rule set isn’t blocking legitimate internal research files?
-287. How do you safely store and rotate TLS private keys for internal services?
-288. What is the effect of content-type sniffing on file upload security?
-289. How can you design API endpoints to fail closed rather than fail open?
-290. What methods help prevent CSRF in API flows used by browsers?
-291. How to evaluate whether a third-party dependency introduces unacceptable risk?
-292. What is credential stuffing detection and mitigation in user authentication flows?
-293. How can you safely implement administrative audit logging without privacy violations?
-294. What are effective heuristics to distinguish benign from malicious payloads in logs?
-295. How do you design rate limiting that differentiates between legitimate bursts and attacks?
-296. How to safely use CSP nonces and hashes in dynamic content environments?
-297. What are secure patterns for accepting user-provided URLs (to prevent SSRF)?
-298. How do you perform a threat model for a public API?
-299. What are the differences in testing mobile app APIs vs web app APIs?
-300. How do you detect and mitigate dependency confusion in internal package registries?
-301. What is the impact of caching on authorization-sensitive endpoints?
-302. How can you detect business-logic abuse (e.g., coupon farming) with analytics?
-303. What are safe practices for serving generated files (PDF, CSV) to prevent injection?
-304. How do you test an API for account enumeration issues?
-305. What controls prevent attackers from abusing bulk/async job endpoints?
-306. How to design a secure onboarding flow for new API consumers?
-307. What are the best practices for rate limiting by IP vs by API key vs by user id?
-308. How can you safely implement file type conversion on the server without RCE?
-309. What methods prevent users from tampering with client-side feature flags?
-310. How do you safely expose debugging endpoints without leaking secrets?
-311. What is the role of service mesh (mTLS) in preventing lateral movement?
-312. How to detect when an attacker is using timing side-channels to leak data?
-313. What are the tradeoffs of logging full request bodies versus partial redaction?
-314. How should you handle error reporting in libraries to avoid leaking stack traces?
-315. How can API clients be fingerprinted and how do you respond to suspicious clients?
-316. What are practical mitigations for GraphQL field-level authorization issues?
-317. How do you safely test for race conditions in financial or inventory APIs?
-318. What is the risk model for accepting and storing user-supplied HTML?
-319. How to design and test quota systems for multi-tenant APIs?
-320. What are the best practices for storing encrypted PII in databases?
-321. How do you test for logic flaws that allow free transactions or refunds?
-322. What are signs of API key leakage in public repositories and how to remediate?
-323. How do you create a reproducible, safe testbed (lab) for practicing offensive techniques without harming others?
+What is the primary goal of a basic SQL injection test?
+Provide a classic payload for bypassing a login form and explain why it works.
+What is the main difference between Union-based SQLi and Blind SQLi?
+What is the most important command to start with when using the sqlmap tool?
+What is the single most effective way to prevent SQL injection?
+What is the difference between Authentication (AuthN) and Authorization (AuthZ) in API security?
+How do you manually test for an IDOR (Insecure Direct Object Reference) vulnerability in an API?
+What is a common vulnerability to check for in a JSON Web Token (JWT)?
+What does it mean if an API endpoint is missing rate limiting and why is it a risk?
+What are Postman and Burp Suite used for in API testing?
+What is Cross-Site Scripting (XSS) and how does it differ from SQL Injection?
+What is the most effective way to prevent Cross-Site Scripting (XSS)?
+What is an XML External Entity (XXE) attack?
+How can you prevent XXE vulnerabilities?
+Explain a Second-Order SQL Injection attack.
+What is an Out-of-Band SQL Injection attack?
+What are some important HTTP security headers to check for when testing an API?
+Why is 'Improper Assets Management' a risk for APIs?
+How can a GraphQL API be abused if not properly secured?
+What is a Server-Side Request Forgery (SSRF) vulnerability in the context of an API?
+Can you provide a list of common SQL injection payloads for testing?
+Explain in detail how to use a time-based blind SQL injection payload.
+What is a simple but effective payload to test for reflected Cross-Site Scripting (XSS)?
+Provide an advanced XSS payload that can steal a user's session cookie.
+What is an XML External Entity (XXE) payload used to read local files?
+Give a payload for a basic Server-Side Request Forgery (SSRF) attack.
+How can you bypass a Web Application Firewall (WAF) for SQL injection?
+Provide an example of a database-specific SQLi payload that would not work on other databases.
+What is Broken Function Level Authorization (BFLA) in an API, and how is it different from IDOR?
+Explain a Mass Assignment vulnerability in an API with an example.
+How can a CORS misconfiguration be a security risk for an API?
+Hi or Hello or Hey
+How are you? or How are you today?
+What is your name? or Who are you?
+Thank you or Thanks
+What is the date today?
+What is the OWASP Top 10?
+Can you list and explain the OWASP Top 10 for 2021?
+For comparison, what were the OWASP Top 10 for 2017?
+What were the biggest changes between the 2017 and 2021 OWASP Top 10 lists?
+What is SQL?
+What is an API?
+What is the difference between a database, a DBMS, and SQL?
+What are the main sub-languages of SQL?
+What is a SQL query?
+What is a 'schema' in a database?
+What is a primary key?
+What is a foreign key?
+What is the difference between WHERE and HAVING clauses?
+What is normalization in a database?
+What is the difference between DROP, TRUNCATE, and DELETE?
+What is a stored procedure?
+What is In-Band SQL Injection?
+What is Out-of-Band SQL Injection (OOB-SQLi)?
+What is a first-order SQL injection?
+What is a second-order or stored SQL injection?
+Why is 'information gathering' important before performing SQLi?
+What are information_schema tables in MySQL?
+What is the purpose of the `ORDER BY` clause in a UNION-based SQLi attack?
+What is a stacked query SQL injection?
+What is content-based blind SQL injection?
+What is the role of character encoding in SQLi attacks?
+What is a payload to list all table names in a MySQL database named 'webapp'?
+How would you extract data from columns 'user' and 'pass' from a table 'accounts'?
+What is a payload to read a file using `LOAD_FILE` in MySQL?
+What is a payload to write a file to the web server in MySQL?
+What is a payload to perform a DNS lookup in an OOB SQLi on Windows?
+What is a payload to perform a DNS lookup in an OOB SQLi on Oracle?
+What is a time-based payload to extract the first letter of the database name in PostgreSQL?
+How do you perform a SQL injection in a `LIMIT` clause?
+What is a "dangling link" SQL injection?
+What is a SQL injection payload using the `GROUP_CONCAT` function in MySQL?
+How to perform SQLi in an `INSERT` statement?
+What is a payload for error-based injection in Oracle?
+How can the `LIKE` clause be vulnerable to SQL injection?
+What is a boolean-based payload to check if a user 'admin' exists?
+What is a payload to get the current database user in PostgreSQL?
+How do you bypass a filter that blocks the word 'UNION'?
+What is a payload to find the database version in SQL Server without using `@@version`?
+How can you use hexadecimal encoding in a SQLi payload?
+What is a payload for a time-based blind injection in a `WHERE` clause?
+What is a "cookie-based" SQL injection?
+What is input validation?
+What is the difference between allow-listing and deny-listing?
+What is output encoding?
+Why is using stored procedures not a complete defense against SQLi?
+What is the principle of least privilege?
+How does ORM help prevent SQL injection?
+Why is escaping user input less effective than parameterized queries?
+Can a database firewall help prevent SQLi?
+How can type casting prevent SQL injection?
+How do you securely handle dynamic table or column names?
+What is NoSQL injection?
+What is an example of a MongoDB injection payload?
+What is LDAP injection?
+What is XPath injection?
+How can a search function be vulnerable to SQLi?
+Can an ORDER BY clause be exploited for data exfiltration?
+What is a "deep blind" SQL injection?
+How can an API endpoint be vulnerable to SQL injection?
+What is header-based SQL injection?
+Can database link injection occur?
+What is the primary function of the tool sqlmap?
+What does the `--dbs` flag do in sqlmap?
+How do you tell sqlmap to test a specific parameter?
+What is the `--risk` level in sqlmap?
+How can you use sqlmap to test a POST request?
+What is the `--os-shell` flag in sqlmap?
+Besides sqlmap, what are other tools used to find SQLi?
+What is a "tamper script" in sqlmap?
+How can you handle a login form with sqlmap?
+What does the `--technique` flag do in sqlmap?
+What is the business impact of a successful SQL injection attack?
+What was the famous Equifax breach caused by?
+Can SQL injection lead to a full server takeover?
+How does SQL injection relate to compliance standards like PCI DSS?
+What is the difference between SQLi and Cross-Site Scripting (XSS)?
+Why are error messages a security risk?
+Is it possible to perform SQLi if the application is not using a SQL database?
+What is a "zero-day" SQL injection?
+Why is it important to log SQL queries for security?
+How can a code review process help prevent SQLi?
+What is a differential injection?
+Can SQLi occur through a DNS query?
+What is a "SQL Truncation Attack"?
+How can SQL injection be used to create a Denial of Service (DoS)?
+What is a "data-only" attack in the context of SQLi?
+What is the difference between `CHAR()` and `CONCAT()` in a WAF bypass?
+How can SQL session variables be abused?
+What is a "false positive" in an automated SQLi scan?
+What is a "false negative" in an automated SQLi scan?
+What is "SQL collation"?
+Can SQLi occur in an `UPDATE` statement's `SET` clause?
+What is a "polyglot" injection payload?
+Can you get SQLi through an integer-based parameter?
+What is "SQL sharding"?
+How can the `PIVOT` operator in SQL Server be abused?
+What is the significance of the `mysql_real_escape_string` function?
+Can you inject into a `TRUNCATE` statement?
+What is "taint analysis"?
+How does HTTP Parameter Pollution (HPP) relate to SQLi?
+What is the most important mindset for a security tester looking for SQLi?
+What is a REST API?
+What is a GraphQL API?
+What is the difference between an API endpoint and a URL?
+What are the most common HTTP methods used in REST APIs?
+What is a JSON Web Token (JWT)?
+What is the difference between HTTP and HTTPS?
+What is an API key?
+What is OAuth 2.0?
+What does it mean for an API to be 'stateless'?
+What is API versioning and why is it important?
+What is the OWASP API Security Top 10?
+What is API1:2023 - Broken Object Level Authorization (BOLA)?
+What is API2:2023 - Broken Authentication?
+What is API3:2023 - Broken Object Property Level Authorization?
+What is API4:2023 - Unrestricted Resource Consumption?
+What is API5:2023 - Broken Function Level Authorization (BFLA)?
+What is API6:2023 - Unrestricted Access to Sensitive Business Flows?
+What is API7:2023 - Server-Side Request Forgery (SSRF)?
+What is API8:2023 - Security Misconfiguration?
+What is API9:2023 - Improper Inventory Management?
+What is API10:2023 - Unsafe Consumption of APIs?
+How do you test a JWT for signature validation?
+How do you test for weak password policies on a registration endpoint?
+What is a test for insecure direct password reset?
+How can you test for missing rate limiting on a login endpoint?
+How do you test an API key for excessive permissions?
+What is a "replay attack" against an API?
+How do you test for session termination vulnerabilities?
+How do you test an OAuth 2.0 implementation for the "Implicit Grant" flow vulnerability?
+How to test for Broken Object Level Authorization (BOLA/IDOR)?
+How do you test for Broken Function Level Authorization (BFLA)?
+How do you test an API endpoint for command injection?
+How do you test an API for SQL injection?
+How can you test a GraphQL endpoint for batching attacks?
+How do you test for Mass Assignment?
+How can you test for Verbose Error Messages?
+How do you test for XXE injection in an API that accepts XML?
+How do you test for Insecure Deserialization?
+How do you test an API that accepts file uploads for vulnerabilities?
+What is parameter pollution and how do you test for it?
+How do you test a GraphQL endpoint for excessive errors?
+How do you test for race conditions in an API?
+How would you test a "refer a friend" feature for abuse?
+How do you test a coupon code feature for flaws?
+What is a test for API response manipulation?
+How do you test for an insecure API redirect?
+How do you test for business logic flaws in a checkout process?
+How to test for API key leakage?
+How do you test for denial of service through regex?
+How do you find undocumented API endpoints?
+How do you test for information leakage in API responses?
+What security headers are important to check for in API responses?
+How do you test an API for old, unpatched versions?
+How do you test for a CORS misconfiguration?
+How do you check if an API is exposing unnecessary HTTP methods?
+How do you test if an API is vulnerable to Host Header Injection?
+What is the risk of an API not having a `Cache-Control` header?
+How do you test for default credentials on an API's infrastructure?
+How can you find sensitive data in public documentation?
+What is a test for stack trace exposure?
+How to test an API for unprotected metadata endpoints?
+How do you perform introspection on a GraphQL API?
+How do you test for deep recursion in a GraphQL query?
+What is a test for GraphQL query cost analysis?
+How do you test for batching attacks in GraphQL?
+How are authorization and authentication different in GraphQL?
+What is a GraphQL alias abuse attack?
+How can you test for information leakage in GraphQL error messages?
+How do you test for mutations that lack proper authorization?
+What is the difference between a Query, a Mutation, and a Subscription in GraphQL?
+How do you test a GraphQL API for CSRF vulnerabilities?
+What is the first step in testing an API?
+What is the role of Postman in API testing?
+What is the role of Burp Suite in API testing?
+What is Kiterunner?
+What is a Swagger or OpenAPI file?
+What is "shifting left" in API security?
+What is the difference between DAST and SAST for API testing?
+Why is it important to test both authenticated and unauthenticated endpoints?
+What is the value of creating a testing methodology or checklist?
+What is the most important skill for an API security tester?
+What is the difference between parameterized queries and prepared statements?
+How can second-order SQL injection be detected during code review?
+What are the typical places to look for injection bugs in an API (headers, body, query, cookies)?
+How can you safely validate and sanitize JSON input on the server side?
+What is the most effective way to test JWT signature validation?
+How should refresh tokens be implemented to minimize risk?
+What are the security implications of long-lived vs short-lived access tokens?
+How can you mitigate credential stuffing attacks against an API?
+What telemetry would indicate a brute-force attack is in progress?
+How do you detect blind SQLi when the application returns no error messages?
+What are safe patterns for logging user input without causing log injection or leakage?
+How do you design an allow-list for dynamic table or column names?
+What are best practices for handling file uploads to avoid RCE or path traversal?
+How can you test for command injection in backend processing pipelines?
+What are effective rate-limiting strategies for APIs (and their tradeoffs)?
+How do you design API pagination to avoid leaking data between users?
+What are the signs of an SSRF vulnerability when no external callbacks are allowed?
+How can you protect cloud metadata endpoints from server-side access?
+What is the danger of reflecting the Origin header in CORS responses?
+How can you detect mass-assignment vulnerabilities in an API quickly?
+What are secure defaults for CORS configuration on public APIs?
+How does content-security-policy (CSP) mitigate XSS in single-page apps?
+What are the risks of storing secrets in environment variables in containers?
+How can supply-chain vulnerabilities be introduced via CI/CD pipelines?
+What is the difference between DAST and SAST and when to use each?
+How would you test an API gateway for authorization bypasses?
+What are the pros and cons of using a WAF versus fixing the application itself?
+How can API versioning introduce security risk if not managed properly?
+What checks should be part of a secure API deployment checklist?
+How can you fingerprint the database engine without exploiting it?
+What are effective defenses against time-based blind SQLi extraction?
+How do you test GraphQL for overly expensive or nested queries?
+What are the security risks of enabling GraphQL introspection in production?
+How can you test for insecure deserialization in JSON or binary formats?
+How do you detect token replay attacks in a stateless API environment?
+What is the safe way to implement RBAC in a microservices architecture?
+How can you harden password reset flows to prevent account takeover?
+What is HTTP request smuggling and how can it affect API security?
+How can client-side validation be bypassed and why is server validation required?
+What are the best practices for secret rotation for service-to-service credentials?
+How do you safely expose third-party webhooks without opening SSRF?
+What logging and alert thresholds help detect data exfiltration attempts?
+How should error messages be structured to avoid leaking internal details?
+What is the role of canary tokens in detecting automated exploitation?
+How can you safely test rate limiting without causing collateral DoS?
+What are common pitfalls when implementing role escalation protection?
+How do you identify stale or forgotten API endpoints in a large system?
+What are the consequences of allowing user-supplied redirects (open redirect)?
+How can you test if a file upload is being executed as code on the server?
+What metrics should a security dashboard display for API health and threat detection?
+How to design effective allow-lists for accepted MIME types and file signatures?
+What are the security tradeoffs of using API keys vs OAuth2 for machine clients?
+How do you test for header-based injection vulnerabilities (User-Agent, Referer)?
+What is parameter pollution and how might it be abused in different backends?
+How do you test for insecure default permissions on newly created DB users?
+What is the impact of verbose SQL error messages in production, and how to mitigate it?
+How can database permissions enforce the principle of least privilege?
+What are safe approaches to logging SQL queries for debugging without exposing secrets?
+How do you validate and sanitize data used in server-side template engines?
+What are the key indicators of automated SQLi scanning in access logs?
+How can you detect chained vulnerabilities (e.g., SSRF → internal auth access)?
+What hardening steps should be applied to XML parsers to prevent XXE?
+How can you validate that a WAF rule set isn’t blocking legitimate internal research files?
+How do you safely store and rotate TLS private keys for internal services?
+What is the effect of content-type sniffing on file upload security?
+How can you design API endpoints to fail closed rather than fail open?
+What methods help prevent CSRF in API flows used by browsers?
+How to evaluate whether a third-party dependency introduces unacceptable risk?
+What is credential stuffing detection and mitigation in user authentication flows?
+How can you safely implement administrative audit logging without privacy violations?
+What are effective heuristics to distinguish benign from malicious payloads in logs?
+How do you design rate limiting that differentiates between legitimate bursts and attacks?
+How to safely use CSP nonces and hashes in dynamic content environments?
+What are secure patterns for accepting user-provided URLs (to prevent SSRF)?
+How do you perform a threat model for a public API?
+What are the differences in testing mobile app APIs vs web app APIs?
+How do you detect and mitigate dependency confusion in internal package registries?
+What is the impact of caching on authorization-sensitive endpoints?
+How can you detect business-logic abuse (e.g., coupon farming) with analytics?
+What are safe practices for serving generated files (PDF, CSV) to prevent injection?
+How do you test an API for account enumeration issues?
+What controls prevent attackers from abusing bulk/async job endpoints?
+How to design a secure onboarding flow for new API consumers?
+What are the best practices for rate limiting by IP vs by API key vs by user id?
+How can you safely implement file type conversion on the server without RCE?
+What methods prevent users from tampering with client-side feature flags?
+How do you safely expose debugging endpoints without leaking secrets?
+What is the role of service mesh (mTLS) in preventing lateral movement?
+How to detect when an attacker is using timing side-channels to leak data?
+What are the tradeoffs of logging full request bodies versus partial redaction?
+How should you handle error reporting in libraries to avoid leaking stack traces?
+How can API clients be fingerprinted and how do you respond to suspicious clients?
+What are practical mitigations for GraphQL field-level authorization issues?
+How do you safely test for race conditions in financial or inventory APIs?
+What is the risk model for accepting and storing user-supplied HTML?
+How to design and test quota systems for multi-tenant APIs?
+What are the best practices for storing encrypted PII in databases?
+How do you test for logic flaws that allow free transactions or refunds?
+What are signs of API key leakage in public repositories and how to remediate?
+How do you create a reproducible, safe testbed (lab) for practicing offensive techniques without harming others?
