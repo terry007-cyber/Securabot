@@ -2,7 +2,7 @@ import os
 import sys
 import google.generativeai as genai
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # <--- NEW LINE HERE
+from flask_cors import CORS 
 from dotenv import load_dotenv
 # --- SPECIAL CODE FOR PYINSTALLER ---
 # This function helps the script find files when it's a bundled .exe
